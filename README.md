@@ -94,3 +94,8 @@ WhatsApp: 082189776753
 
 Made with ❤️ for Crumbciz Cheesecake
 
+## 📝 Update Code (Langsung ke apk GIT)
+1. cd "D:/MATERI KULIAH TELKOM/XAMP/htdocs/kwh"
+2. git add .
+3. git commit -m "Update: ubah tampilan menu topping"
+4. git push
