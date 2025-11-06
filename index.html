@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cheesecake Minimalis</title>
+    <meta name="description" content="Cheesecake minimalis, premium, dan fresh setiap hari. Order via WhatsApp." />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header__bar">
+        <a class="brand" href="index.html">Crumbciz</a>
+        <button class="nav__toggle" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
+        <nav class="nav" id="site-nav">
+          <a href="#home">Home</a>
+          <a href="#topping">Topping</a>
+          <a href="#sauce">Sauce</a>
+          <a href="#order" class="nav__cta">Order</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+
+<section class="hero" id="home">
+  <div class="container hero__content">
+    <h1 class="hero__title">Cheesecake Sesuai Mood Kamu 🍰</h1>
+    <p class="hero__subtitle">Pilih topping dan sauce favoritmu mulai dari Rp15.000.<br>
+    Crumbciz Cheesecake, manisnya #MoodKamu.</p>
+    <a href="#topping" class="btn btn--primary">Mulai Pilih Sekarang</a>
+  </div>
+</section>
+
+<section class="container section" id="topping">
+  <h2 class="section__title">1. Pilih Topping Kamu (Free)</h2>
+  <div class="grid" id="toppingGrid">
+    <div class="card card--selectable" data-topping="Strawberry">
+      <img src="topping/strawberry topping.jpg" alt="Strawberry">
+      <p>Strawberry</p>
+    </div>
+    <div class="card card--selectable" data-topping="Milo">
+      <img src="topping/milo topping.jpg" alt="Milo">
+      <p>Milo</p>
+    </div>
+    <div class="card card--selectable" data-topping="Oreo">
+      <img src="topping/oroe.jpg" alt="Oreo">
+      <p>Oreo</p>
+    </div>
+    <div class="card card--selectable" data-topping="Regal">
+      <img src="topping/regal topping.jpg" alt="Regal">
+      <p>Regal</p>
+    </div>
+    <div class="card card--selectable" data-topping="Original">
+      <img src="topping/original.png" alt="Original">
+      <p>Original</p>
+    </div>
+  </div>
+</section>
+
+<section class="container section" id="sauce">
+  <h2 class="section__title">2. Pilih Sauce (+3K kecuali Original)</h2>
+  <div class="grid" id="sauceGrid">
+    <div class="card card--selectable" data-sauce="Strawberry" data-price="3000">
+      <img src="sauce/straw sauce.jpg" alt="Strawberry Sauce">
+      <p>Strawberry +3k</p>
+    </div>
+    <div class="card card--selectable" data-sauce="Chocolate" data-price="3000">
+      <img src="sauce/coklat sauce.jpg" alt="Chocolate Sauce">
+      <p>Chocolate +3k</p>
+    </div>
+    <div class="card card--selectable" data-sauce="Mango" data-price="3000">
+      <img src="sauce/mango sauce.jpg" alt="Mango Sauce">
+      <p>Mango +3k</p>
+    </div>
+    <div class="card card--selectable" data-sauce="Original" data-price="0">
+      <img src="sauce/original.png" alt="Original Sauce">
+      <p>Original +0k</p>
+    </div>
+  </div>
+</section>
+
+<section class="container section" id="order">
+  <h2 class="section__title">3. Lihat Total & Pesan Sekarang</h2>
+  <div class="price-box" id="priceBox">Total: Rp15.000</div>
+  <div class="order-form">
+    <input type="text" id="customerName" class="input-name" placeholder="Masukkan nama Anda" required>
+    <textarea id="customerAddress" class="input-address" placeholder="Masukkan alamat lengkap tempat tinggal Anda" rows="3" required></textarea>
+  </div>
+  <button class="btn btn--primary btn--lg" id="orderBtn">Pesan via WhatsApp</button>
+</section>
+
+    </main>
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <p>&copy; <span id="currentYear"></span> Cheesecake Minimalis. Semua hak dilindungi.</p>
+        <a class="btn btn--sm btn--secondary" href="https://wa.me/6282189776753?text=Halo!%20Saya%20ingin%20memesan%20cheesecake." target="_blank" rel="noopener">Order via WhatsApp</a>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Set current year for footer
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+

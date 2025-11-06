@@ -1,0 +1,25 @@
+# XAMPP
+*.log
+*.tmp
+
+# PHP files (not needed for GitHub Pages)
+*.php
+partials/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Keep assets and images
+!assets/
+!topping/
+!sauce/
+
