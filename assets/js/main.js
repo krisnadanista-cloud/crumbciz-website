@@ -99,7 +99,7 @@
         `Total: Rp${total.toLocaleString('id-ID')}\n\n` +
         `Terima kasih!`;
 
-      const whatsappUrl = `https://wa.me/6282189776753?text=${encodeURIComponent(message)}`;
+      const whatsappUrl = `https://wa.me/628812388319?text=${encodeURIComponent(message)}`;
       window.open(whatsappUrl, '_blank');
     });
   }
